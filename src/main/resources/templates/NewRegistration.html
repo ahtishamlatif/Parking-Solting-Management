@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{fragments/layout}" xmlns:c="http://www.w3.org/1999/XSL/Transform">
+<head>
+
+
+    <title>Car Parking System</title>
+
+</head>
+<body>
+<!-- page content -->
+<!--<c:if test="${not empty error && error=='Y'}">-->
+<!--    <div class="alert alert-danger">-->
+<!--        <strong>Error!</strong> ${error_msg}-->
+<!--    </div>-->
+<!--</c:if>-->
+<!--<c:if test="${not empty success && success=='Y'}">-->
+<!--    <div class="alert alert-success">-->
+<!--        <strong>Success!</strong> ${success_msg}-->
+<!--    </div>-->
+<!--</c:if>-->
+<div class="right_col" role="main" data-layout-fragment="content">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Add New Car</h3>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2> Add New Car Form Design <br>
+                            <small>Here,You can edit new entery for Car</small>
+                        </h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="dropdown-item" href="#">Settings 1</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br/>
+                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left"
+                              method="post" action="/register">
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="car_nmber">Car Number
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 ">
+                                    <input type="text" id="car_nmber" name="carNmber" required="required"
+                                           class="form-control ">
+                                </div>
+                            </div>
+
+
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="parking_area"> Choose
+                                    Parking Area
+                                    <span class="required">*</span>
+                                </label>
+
+                                <div class="col-md-6 col-sm-6 ">
+                                    <select name="parkingArea" id="parking_area" required="required"
+                                            class="form-control">
+                                        <option value="Mechanical Parking ">Mechanical Parking</option>
+                                        <option value="IT Parking">IT Parking</option>
+                                        <option value="CS Parking">CS Parking</option>
+                                        <option value="Outsider Parking">Outsider Parking</option>
+                                        <option value="Teachers Parking">Teachers Parking</option>
+                                        <option value="Stuff Parking">Stuff Parking</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="line_nmber"> Choose
+                                    Line Number
+                                    <span class="required">*</span>
+                                </label>
+
+                                <div class="col-md-6 col-sm-6 ">
+                                    <select name="lineNmber" id="line_nmber" required="required"
+                                            class="form-control">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="col-form-label col-md-3 col-sm-3 label-align" for="slot_nmber"> Choose
+                                    Slot Number
+                                    <span class="required">*</span>
+                                </label>
+
+                                <div class="col-md-6 col-sm-6 ">
+                                    <select name="slotNmber" id="slot_nmber" required="required"
+                                            class="form-control">
+                                        <option value="A1">A1</option>
+                                        <option value="A2">A2</option>
+                                        <option value="A3">A3</option>
+                                        <option value="M4">M4</option>
+                                        <option value="M5">M5</option>
+                                        <option value="M6">M6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+                            <div class="item form-group">
+                                <div class="col-md-6 col-sm-6 offset-md-3">
+                                    <button class="btn btn-primary" type="button">Cancel</button>
+                                    <button class="btn btn-primary" type="reset">Reset</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /page content -->
+
+
+        <!-- footer content -->
+
+        <!-- /footer content -->
+
+</body>
+</html>
+

@@ -25,6 +25,10 @@ public class CarParkingEntity {
         this.carId = carId;
     }
 
+
+
+// Git Test
+
     @Basic
     @Column(name = "car_nmber")
     public String getCarNmber() {
